@@ -10,36 +10,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6703c2f694.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="top">
     <header class="header">
         <div class="container flex justify-between align-center">
-           <div>
+           <div class="brand">
             <a href="#">
                 <strong>Flexor</strong>
             </a>
            </div>
+           <label class="bars" for="toggle">
+            <i class="fa-solid fa-bars"></i>
+           </label>
+           <input type="checkbox" id="toggle">
            <nav class="nav">
-            <ul class=" flex justify-between align-center">
+            <ul class=" flex justify-between align-center sm-column">
                 <li class="nav-items">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Team</a>
+                    <a href="#team">Team</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Pricing</a>
+                    <a href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li class="nav-items relative sub-menu-box">
                     <a href="#">
@@ -65,7 +69,7 @@
                     </ul>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
            </nav>
@@ -74,6 +78,7 @@
     <main>
         <section class="hero relative">
             <div class="container">
+               <div class="hero-header">
                 <h1>Welcome to Flexor</h1>
                 <p>We are team of talented designers making websites with Bootstrap</p>
                 <div>
@@ -84,11 +89,12 @@
                         Get Started
                     </a>
                 </div>
+               </div>
             </div>
         </section>
         <section class="choose ">
-            <article class="container flex justify-between align-center">
-                <div class="col-1 flex-34 ">
+            <article class="article container flex justify-between align-center sm-column md-column">
+                <div class="col col-1 flex-34 sm-flex-100 md-flex-100">
                     <h2>
                         Why Choose Flexor <br>for your company <br> website?
                     </h2>
@@ -101,7 +107,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-2 flex-20 text-center">
+                <div class="col col-2 flex-20 text-center sm-flex-100 ">
                     <div>
                         <i class="fa-solid fa-book"></i>
                     </div>
@@ -110,7 +116,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit dolors exerci?
                     </p>
                 </div>
-                <div class="col-2 flex-20 text-center">
+                <div class="col col-2 flex-20 text-center sm-flex-100 ">
                     <div>
                         <i class="fa-solid fa-cube"></i>
                     </div>
@@ -119,7 +125,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit dolors exerci?
                     </p>
                 </div>
-                <div class="col-2 flex-20 text-center">
+                <div class="col col-2 flex-20 text-center sm-flex-100 ">
                     <div>
                         <i class="fa-regular fa-images"></i>
                     </div>
@@ -130,15 +136,15 @@
                 </div>
             </article>
         </section>
-        <section class="about">
-            <div class="container flex justify-between align-center">
-                <div class="flex-40 relative">
+        <section class="about" id="about">
+            <div class="container flex justify-between align-center sm-column md-column">
+                <div class="flex-40 relative sm-flex-100">
                     <img src="assets/media/about-img.jpg" alt="" width="100%" height="600px">
                     <div class="playBtn-container">
                         <i class="fa-solid fa-play"></i>
                     </div>
                 </div>
-                <div class="flex-54">
+                <div class="flex-54 sm-flex-100 col-2 ">
                     <h4>About us</h4>
                     <h3>Enim quis est voluptabius aliquid consectetur fugiat</h3>
                     <p>
@@ -204,14 +210,14 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services-header text-center">
                     <h3>Services</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ea consequatur sed aliquid dolorum provident accusantium harum reiciendis. Voluptates accusantium veniam sapiente quaerat sed? Perferendis totam a explicabo provident at!</p>
                 </div>
-                <div class="flex services-items justify-between wrap">
-                    <div class="flex-32 col relative">
+                <div class="flex services-items justify-between wrap sm-column ">
+                    <div class="flex-32 col relative sm-flex-100 md-flex-48">
                         <div class="i-container">
                             <i class="fa-solid fa-tv"></i>
                         </div>
@@ -222,7 +228,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="flex-32 col relative">
+                    <div class="flex-32 col relative sm-flex-100 md-flex-48">
                         <div  class="i-container">
                             <i class="fa-solid fa-chart-simple"></i>
                         </div>
@@ -233,7 +239,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="flex-32 col relative">
+                    <div class="flex-32 col relative sm-flex-100 md-flex-48">
                         <div class="i-container">
                             <i class="fa-solid fa-earth-asia"></i>
                         </div>
@@ -244,7 +250,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="flex-32 col relative">
+                    <div class="flex-32 col relative sm-flex-100 md-flex-48">
                         <div class="i-container">
                             <i class="fa-regular fa-image"></i>
                         </div>
@@ -255,7 +261,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="flex-32 col relative">
+                    <div class="flex-32 col relative sm-flex-100 md-flex-48">
                         <div class="i-container">
                             <i class="fa-solid fa-sliders"></i>
                         </div>
@@ -266,7 +272,7 @@
                            </p>
                         </div>
                     </div>
-                    <div class="flex-32 col relative">
+                    <div class="flex-32 col relative sm-flex-100 md-flex-48">
                         <div class="i-container">
                             <i class="fa-solid fa-calendar-days"></i>
                         </div>
@@ -281,13 +287,13 @@
             </div>
         </section>
         <section class="values">
-            <div class="container flex justify-between wrap">
+            <div class="container flex justify-between wrap sm-column">
                 <div class="flex-49 relative col">
                     <img src="assets/media/values-1.jpg" alt="" width="100%" height="300">
                     <div class="img-header">
                         <h4>Our Mission</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio aut voluptatum quibusdam assumenda optio.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio  assumenda optio.
                         </p>
                         <a href="#">
                             <i class="fa-solid fa-right-long"></i>
@@ -300,7 +306,7 @@
                     <div class="img-header">
                         <h4>Our Plan</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio aut voluptatum quibusdam assumenda optio.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio  assumenda optio.
                         </p>
                         <a href="#">
                             <i class="fa-solid fa-right-long"></i>
@@ -313,7 +319,7 @@
                     <div class="img-header">
                         <h4>Our Vision</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio aut voluptatum quibusdam assumenda optio.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio assumenda optio.
                         </p>
                         <a href="#">
                             <i class="fa-solid fa-right-long"></i>
@@ -326,7 +332,7 @@
                     <div class="img-header">
                         <h4>Our Care</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio aut voluptatum quibusdam assumenda optio.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti, distinctio assumenda optio.
                         </p>
                         <a href="#">
                             <i class="fa-solid fa-right-long"></i>
@@ -355,20 +361,20 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h3>Portfolio</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ea consequatur sed aliquid dolorum provident accusantium harum reiciendis. Voluptates accusantium veniam sapiente quaerat sed? Perferendis totam a explicabo provident at!</p>
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center ">
                     <div class="opts opts-active">All</div>
                     <div class="opts opts-hover">Card</div>
                     <div class="opts opts-hover">Web</div>
                     <div class="opts opts-hover">App</div>
                 </div>
-                <div class="flex wrap justify-between">
-                    <div class="flex-32 relative img-container">
+                <div class="flex wrap justify-between sm-column">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-1.jpg" alt="portfolio-1" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -385,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-2.jpg" alt="portfolio-2" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -402,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-3.jpg" alt="portfolio-3" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -419,7 +425,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-4.jpg" alt="portfolio-4" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -436,7 +442,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-5.jpg" alt="portfolio-5" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -453,7 +459,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-6.jpg" alt="portfolio-6" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -470,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-7.jpg" alt="portfolio-7" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -487,7 +493,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-8.jpg" alt="portfolio-8" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -504,7 +510,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-32 relative img-container">
+                    <div class="flex-32 relative img-container md-flex-48">
                         <img src="assets/media/portfolio-9.jpg" alt="portfolio-9" width="100%">
                         <div class="flex justify-between align-center cards">
                             <div>
@@ -524,7 +530,7 @@
                 </div>
             </div>
         </section>
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="text-center">
                     <h3>Team</h3>
@@ -532,8 +538,8 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ea consequatur sed aliquid dolorum provident accusantium harum reiciendis. Voluptates accusantium veniam sapiente quaerat sed? Perferendis totam a explicabo provident at!
                     </p>
                 </div>
-                <div class="flex justify-between">
-                    <div class="flex-24 col relative">
+                <div class="flex justify-between sm-column md-wrap">
+                    <div class="flex-24 col relative md-flex-48">
                         <img src="assets/media/team-1.jpg" alt="team-1" width="100%">
                         <div class="text-center col-text">
                             <h4>Walter White</h4>
@@ -546,7 +552,7 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </div>
                     </div>
-                    <div class="flex-24 col relative">
+                    <div class="flex-24 col relative md-flex-48">
                         <img src="assets/media/team-2.jpg" alt="team-1" width="100%">
                         <div class="text-center col-text">
                             <h4>Sarah Jhonson</h4>
@@ -559,7 +565,7 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </div>
                     </div>
-                    <div class="flex-24 col relative">
+                    <div class="flex-24 col relative md-flex-48">
                         <img src="assets/media/team-3.jpg" alt="team-1" width="100%">
                         <div class="text-center col-text">
                             <h4>William Anderson</h4>
@@ -572,7 +578,7 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </div>
                     </div>
-                    <div class="flex-24 col relative">
+                    <div class="flex-24 col relative md-flex-48">
                         <img src="assets/media/team-4.jpg" alt="team-1" width="100%">
                         <div class="text-center col-text">
                             <h4>Amanda Jepson</h4>
@@ -588,7 +594,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="container">
                 <div class="text-center">
                     <h3>
@@ -598,8 +604,8 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ea consequatur sed aliquid dolorum provident accusantium harum reiciendis. Voluptates accusantium veniam sapiente quaerat sed? Perferendis totam a explicabo provident at!
                     </p>
                 </div>
-                <div class="flex justify-between">
-                    <div class="flex-23 text-center col">
+                <div class="flex justify-between sm-column md-wrap">
+                    <div class="flex-23 text-center col md-flex-48">
                         <div class="course-detail">
                             <h4>Free</h4>
                         </div>
@@ -615,7 +621,7 @@
                             <a class="btn" href="#">Buy Now</a>
                         </div>
                     </div>
-                    <div class="flex-23 text-center col">
+                    <div class="flex-23 text-center col md-flex-48">
                         <div class="course-detail active">
                             <h4>Business</h4>
                         </div>
@@ -631,7 +637,7 @@
                             <a class="btn" href="#">Buy Now</a>
                         </div>
                     </div>
-                    <div class="flex-23 text-center col">
+                    <div class="flex-23 text-center col md-flex-48">
                         <div class="course-detail">
                             <h4>Developer</h4>
                         </div>
@@ -647,7 +653,7 @@
                             <a class="btn" href="#">Buy Now</a>
                         </div>
                     </div>
-                    <div class="flex-23 text-center col">
+                    <div class="flex-23 text-center col md-flex-48">
                         <div class="course-detail">
                             <h4>Ultimate</h4>
                         </div>
@@ -750,7 +756,7 @@
                </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h3>Contact</h3>
@@ -759,8 +765,8 @@
                     </p>
                 </div>
                 <div class="contact-sub-container ">
-                    <div class="flex justify-between">
-                        <div class="flex flex-32 col align-start">
+                    <div class="flex justify-between sm-column md-column">
+                        <div class="flex flex-32 col align-start md-flex-100">
                             <div>
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
@@ -769,7 +775,7 @@
                                 <p>A108 Adam Street,New York, NY 535022</p>
                             </div>
                         </div>
-                        <div class="flex flex-32 col">
+                        <div class="flex flex-32 col md-flex-100">
                             <div>
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
@@ -779,7 +785,7 @@
                                 <a href="#">contact@gmail.com</a>
                             </div>
                         </div>
-                        <div class="flex flex-32 col">
+                        <div class="flex flex-32 col md-flex-100">
                             <div>
                                 <i class="fa-solid fa-phone"></i>
                             </div>
@@ -790,9 +796,157 @@
                             </div>
                         </div>
                     </div>
+                    <form action="#">
+                        <fieldset>
+                            <div class="flex justify-between">
+                                <input class="form-items flex-49" type="text" placeholder="Your Name">
+                                <input class="form-items flex-49" type="email" placeholder="Your Email">
+                            </div>
+                            <div>
+                                <input class="form-items" type="subject" placeholder="Subject">
+                            </div>
+                            <textarea class="form-items" placeholder="Message" name="#" id="#" cols="30" rows="5"></textarea>
+                            <div class="text-center">
+                                <input class="btn" type="submit" value="Send Message">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="container">
+                <div class="flex justify-between align-start sm-column md-wrap">
+                    <div class="col col-1 flex column flex-24 md-flex-48 ">
+                        <a href="#">
+                            <strong>Flexor</strong>
+                        </a>
+                        <address>A108 Adam Street <br>New York, NY 535022 <br>United States</address>
+                        <a class="tele" href="tel:+1-234-567-890"><span class="text-dark">Call Us:</span> +1 (234) 567-890</a>
+                        <a href="mailto:info@example.com"><span class="text-dark">Email:</span> info@example.com</a>
+                    </div>
+                    <div class="col col-2 flex-20 md-flex-48">
+                        <h5>Useful Links</h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Home</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>About Us</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Services</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Term of service</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Privacy policy</Span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-2 flex-20 md-flex-48">
+                        <h5>Our Services</h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Web Design</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Web Development</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Product Manager</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Marketing</Span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <Span>Graphic Design</Span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-3 flex-32 md-flex-48">
+                        <h5>Join Our Newsletter</h5>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <div class="btn-container">
+                            <a href="#">Subscribe</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container flex justify-between align-center sm-column md-column">
+            <div class="col sm-text-center md-text-center">
+                <small>&copy; Copyright <strong>suaysh😎</strong>. All Rights Reserved </small>
+                <p>Designed by <span>BootstrapMade</span></p>
+            </div>
+            <div class="col">
+                <ul class="flex">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-skype"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <a class="top-btn" href="#top">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+    </div>
 </body>
 </html>
